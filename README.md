@@ -1,4 +1,4 @@
-# FlashCards CLI
+# Super-Flash-Cards CLI
 
 A command-line flashcard app using JSON-based card sets.
 See what typical workflows would look like at the bottom of this file.
@@ -138,6 +138,16 @@ First, save the page HTML from your browser:
 Then run:
 ```
 python main.py scrape                              # Extract plain text
+python main.py autogenerate my_set                 # Generate flashcards via Claude API
+python main.py show                                # Start studying
+```
+
+**Generate a set from copy/pasted info**
+
+Skip the scrape command, and paste info into web/page.txt
+
+Then run:
+```
 python main.py autogenerate my_set                 # Generate flashcards via Claude API
 python main.py show                                # Start studying
 ```
