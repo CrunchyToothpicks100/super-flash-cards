@@ -1,6 +1,7 @@
 # FlashCards CLI
 
 A command-line flashcard app using JSON-based card sets.
+See what typical workflows would look like at the bottom of this file.
 
 ## Usage
 
@@ -40,6 +41,14 @@ Reveal the back of the last card shown with `show`.
 ```
 python main.py flip
 ```
+
+### `delete`
+Delete the currently selected set. Prompts for confirmation before removing.
+```
+python main.py delete
+```
+
+---
 
 ### `scrape`
 Extract plain text from `web/page.html` and save it to `web/page.txt`, stripping all tags, scripts, and styles.

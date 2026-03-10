@@ -136,6 +136,20 @@ def flip_flashcard():
         card = json.load(f)
     print(ascii_card(card['front'], card['back'], flipped=True))
 
+def delete_set():
+    selected = get_selected_set()
+    if not selected:
+        print('No set selected.')
+        return
+    name = os.path.basename(selected)
+    confirm = input(f'Are you sure you want to delete "{name}"? (yes/no): ').strip().lower()
+    if confirm != 'yes':
+        print('Cancelled.')
+        return
+    os.remove(selected)
+    os.remove(SET_FILE)
+    print(f'Deleted set: {name}')
+
 def autogenerate_set():
     # Usage: autogenerate <output_name> [--model <name>]
     args = sys.argv[2:]
@@ -177,6 +191,8 @@ def main():
         show_random_flashcard()
     elif cmd == 'flip':
         flip_flashcard()
+    elif cmd == 'delete':
+        delete_set()
     elif cmd == 'autogenerate':
         autogenerate_set()
     elif cmd == 'scrape':
