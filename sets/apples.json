@@ -1,0 +1,56 @@
+[
+  {
+    "front": "Red Delicious",
+    "back": [
+      "Red Delicious",
+      "Flavor: Mildly sweet, low acidity, often described as sugary but not very complex.",
+      "Appearance: Deep, uniform red skin; elongated, conical shape with five prominent bumps at the bottom.",
+      "Bred/Created: Discovered as a chance seedling in Iowa, USA in the late 19th century; originally called “Hawkeye,” later propagated for its color and sweetness rather than flavor complexity."
+    ]
+  },
+  {
+    "front": "Granny Smith",
+    "back": [
+      "Granny Smith",
+      "Flavor: Tart, crisp, and tangy with a refreshing acidity.",
+      "Appearance: Bright green skin, sometimes with small white speckles; firm, round shape.",
+      "Bred/Created: Discovered in Australia in 1868 by Maria Ann Smith from a chance seedling; propagated for its tart flavor and excellent storage qualities."
+    ]
+  },
+  {
+    "front": "Gala",
+    "back": [
+      "Gala",
+      "Flavor: Sweet and mildly aromatic, low acidity.",
+      "Appearance: Orange-red striped over yellow background; small to medium size.",
+      "Bred/Created: Developed in New Zealand in the 1930s by crossing Kidd's Orange Red and Golden Delicious."
+    ]
+  },
+  {
+    "front": "Fuji",
+    "back": [
+      "Fuji",
+      "Flavor: Very sweet, crisp, juicy, low acidity.",
+      "Appearance: Large, round, red-orange with yellow-green undertones.",
+      "Bred/Created: Developed in Japan in the 1930s-1960s by crossing Red Delicious and Ralls Janet."
+    ]
+  },
+  {
+    "front": "Honeycrisp",
+    "back": [
+      "Honeycrisp",
+      "Flavor: Sweet-tart, exceptionally juicy and crisp.",
+      "Appearance: Red-orange blush over yellow background; medium to large size.",
+      "Bred/Created: Developed by the University of Minnesota in the 1960s–1990s from a cross of Keepsake and an unknown variety."
+    ]
+  },
+  {
+    "front": "Golden Delicious",
+    "back": [
+      "Golden Delicious",
+      "Flavor: Sweet, mellow, low acidity.",
+      "Appearance: Yellow-gold skin, smooth and medium to large size.",
+      "Bred/Created: Discovered as a chance seedling in West Virginia, USA, in the late 19th century; propagated for its sweet flavor and versatility."
+    ]
+  }
+]

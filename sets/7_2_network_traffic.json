@@ -1,0 +1,114 @@
+[
+  {
+    "front": "Traffic shaping",
+    "back": [
+      "A bandwidth management technique prioritizing the flow of network traffic",
+      "Also known as packet shaping",
+      "Prioritizes higher priority traffic over lower priority traffic"
+    ]
+  },
+  {
+    "front": "Quality of Service (QoS)",
+    "back": [
+      "A traffic shaping service that prioritizes traffic of resource-intensive applications at layer 3",
+      "Shapes and prioritizes traffic at the network layer",
+      "Allows high priority services more bandwidth than lower priority services"
+    ]
+  },
+  {
+    "front": "Class of Service (CoS)",
+    "back": [
+      "A traffic shaping service that prioritizes traffic of resource-intensive applications at layer 2",
+      "Classifies and prioritizes traffic by group at the data link layer",
+      "Example: Assigns higher priority to VoIP traffic and lower priority to HTTP traffic"
+    ]
+  },
+  {
+    "front": "Full tunnel VPN",
+    "back": [
+      "Routes and encrypts all network traffic through the VPN regardless of destination",
+      "Generally recommended and more secure because all network traffic is encrypted",
+      "Better option for handling confidential data"
+    ]
+  },
+  {
+    "front": "Split tunnel VPN",
+    "back": [
+      "Routes and encrypts all non-internet network traffic over the VPN",
+      "Internet traffic bypasses the VPN server",
+      "Less secure than full tunnel but allows simultaneous access to internet and office resources"
+    ]
+  },
+  {
+    "front": "Network loop",
+    "back": [
+      "A network topology in which more than one path exists between two network endpoints",
+      "Also known as layer 2 loop or bridge loop",
+      "Occurs at the data link layer (layer 2)"
+    ]
+  },
+  {
+    "front": "Broadcast storm",
+    "back": [
+      "The occurrence of a large number of broadcast and multicast packets on a network within a short time period",
+      "Also known as network storm",
+      "Degrades network performance by exhausting network bandwidth"
+    ]
+  },
+  {
+    "front": "Broadcast storm prevention",
+    "back": [
+      "The act of preventing or reducing packet rebroadcasts on a LAN",
+      "Also known as storm control",
+      "Methods include removal of network loops by disabling ports and limiting broadcast traffic rate"
+    ]
+  },
+  {
+    "front": "Bridge Protocol Data Unit (BPDU)",
+    "back": [
+      "A packet exchanged between switches on a local area network (LAN) to detect network loops",
+      "Used by the spanning tree protocol (STP) to construct a loop-free logical topology",
+      "Should only be sent by switches, not end devices"
+    ]
+  },
+  {
+    "front": "BPDU guard",
+    "back": [
+      "A control mechanism for preventing a BPDU packet from entering a switch port",
+      "Protects a layer 2 STP topology from BPDU-based attacks",
+      "Prevents attackers from injecting malicious BPDU packets"
+    ]
+  },
+  {
+    "front": "Spanning Tree Protocol (STP)",
+    "back": [
+      "A network protocol a layer 2 device uses to eliminate a loop",
+      "IEEE standardized as IEEE 802.1D",
+      "Features: Eliminates existing loops, reconfigures network when changes occur, increases fault tolerance"
+    ]
+  },
+  {
+    "front": "Rapid Spanning Tree Protocol (RSTP)",
+    "back": [
+      "A network loop eliminating protocol with faster convergence time than STP",
+      "IEEE standardized as IEEE 802.1w",
+      "Convergence time is less than ten seconds compared to STP's 30-50 seconds; backward compatible with STP"
+    ]
+  },
+  {
+    "front": "RSTP port states",
+    "back": [
+      "RSTP has four port states: disabled, discarding, learning, and forwarding",
+      "Discarding state: does not forward traffic; used initially to prevent network loops",
+      "Learning state: used during convergence to learn network topology; Forwarding state: forwards traffic normally after convergence"
+    ]
+  },
+  {
+    "front": "STP convergence",
+    "back": [
+      "The time it takes for STP to eliminate loops and establish forwarding paths",
+      "STP convergence time: 30-50 seconds",
+      "RSTP convergence time: less than 10 seconds"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "front": "Seaborn",
+    "back": [
+      "Seaborn is a library for making statistical graphics in Python.",
+      "- Seaborn helps you explore and understand your data.",
+      "- Its plotting functions operate on dataframes and arrays containing whole datasets.",
+      "- Perform the necessary statistical aggregation to produce informative plots."
+    ]
+  },
+  {
+    "front": "Seaborn dependencies",
+    "back": [
+      "- Numpy",
+      "- Matplotlib",
+      "- Pandas"
+    ]
+  }
+]

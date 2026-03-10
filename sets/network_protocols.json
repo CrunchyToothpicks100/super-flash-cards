@@ -1,0 +1,279 @@
+[
+  {
+    "front": "LDAP",
+    "back": [
+      "Lightweight Directory Access Protocol (LDAP)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: TCP/UDP 389 (LDAP), TCP 636 (LDAPS over TLS)",
+      "Purpose: Provides a standardized way to query and manage directory services, commonly used for authentication, authorization, and storing user/group information."
+    ]
+  },
+  {
+    "front": "IGP",
+    "back": [
+      "Interior Gateway Protocol (IGP)",
+      "OSI layer: Network layer (Layer 3)",
+      "Protocols included: RIP, OSPF, IS-IS, EIGRP",
+      "Purpose: A category of routing protocols used within a single autonomous system to exchange routing information and determine the best paths for internal network traffic."
+    ]
+  },
+  {
+    "front": "DVP",
+    "back": [
+      "Distance Vector Protocol (DVP)",
+      "OSI layer: Network layer (Layer 3)",
+      "Protocols included: RIP, IGRP (legacy), EIGRP (advanced distance vector)",
+      "Purpose: A routing approach where routers share routing information with neighbors based on distance metrics and next-hop direction to determine the best path to a destination."
+    ]
+  },
+  {
+    "front": "RIP",
+    "back": [
+      "RIP (Routing Information Protocol)",
+      "OSI layer: Network layer (Layer 3)",
+      "Port / protocol: UDP 520 (RIP), UDP 521 (RIPng for IPv6)",
+      "Purpose: A distance-vector routing protocol that uses hop count as its metric to exchange routing information within a small or simple network."
+    ]
+  },
+  {
+    "front": "IGRP",
+    "back": [
+      "IGRP (Interior Gateway Routing Protocol)",
+      "OSI layer: Network layer (Layer 3)",
+      "Port / protocol: IP protocol number 9",
+      "Purpose: A Cisco proprietary distance-vector routing protocol that uses composite metrics (bandwidth, delay, reliability, load) to route traffic within an autonomous system; now obsolete and replaced by EIGRP."
+    ]
+  },
+  {
+    "front": "LSP",
+    "back": [
+      "Link-State Protocol (LSP)",
+      "OSI layer: Network layer (Layer 3)",
+      "Protocols included: OSPF, IS-IS",
+      "Purpose: A routing approach where routers build a complete map of the network topology and calculate shortest paths using that information, enabling faster convergence and better scalability than distance-vector protocols."
+    ]
+  },
+  {
+    "front": "OSPF",
+    "back": [
+      "OSPF (Open Shortest Path First)",
+      "OSI layer: Network layer (Layer 3)",
+      "Port / protocol: IP protocol number 89",
+      "Purpose: A link-state interior gateway routing protocol that uses a shortest-path algorithm to efficiently route traffic within an autonomous system, supporting fast convergence and hierarchical design with areas."
+    ]
+  },
+  {
+    "front": "BGP",
+    "back": [
+      "BGP (Border Gateway Protocol)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: TCP 179",
+      "Purpose: A path-vector routing protocol used to exchange routing information between autonomous systems on the internet.",
+      "Features: Policy-based routing, uses AS-paths to prevent loops, highly scalable, slower convergence by design, and considered the backbone routing protocol of the internet."
+    ]
+  },
+  {
+    "front": "EIGRP",
+    "back": [
+      "EIGRP (Enhanced Interior Gateway Routing Protocol)",
+      "OSI layer: Network layer (Layer 3)",
+      "Port / protocol: IP protocol number 88",
+      "Purpose: An advanced distance-vector interior gateway routing protocol used to efficiently route traffic within an autonomous system.",
+      "Features: Uses the DUAL algorithm for fast convergence, supports unequal-cost load balancing, uses composite metrics, and was originally Cisco proprietary (now an open standard)."
+    ]
+  },
+  {
+    "front": "SMB",
+    "back": [
+      "SMB (Server Message Block)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: TCP 445",
+      "Purpose: Provides network file sharing, printer sharing, and access to shared resources between systems, commonly used in Windows-based networks."
+    ]
+  },
+  {
+    "front": "SNMP",
+    "back": [
+      "SNMP (Simple Network Management Protocol)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: UDP 161 (queries), UDP 162 (traps/notifications)",
+      "Purpose: Used to monitor, manage, and collect information from network devices such as routers, switches, and servers.",
+      "Features: Uses a manager/agent model, relies on MIBs for structured data, supports polling and asynchronous traps, and includes security enhancements in SNMPv3 (authentication and encryption)."
+    ]
+  },
+  {
+    "front": "ICMP",
+    "back": [
+      "ICMP (Internet Control Message Protocol)",
+      "OSI layer: Network layer (Layer 3)",
+      "Port / protocol: IP protocol number 1",
+      "Purpose: Used for error reporting and network diagnostics, helping devices communicate issues related to IP packet delivery.",
+      "Features: Connectionless, not used for application data, integral to tools like ping and traceroute, and operates alongside IP rather than over TCP/UDP."
+    ]
+  },
+  {
+    "front": "ARP",
+    "back": [
+      "ARP (Address Resolution Protocol)",
+      "OSI layer: Network layer (Layer 3) (operates at the boundary with Data Link)",
+      "Port / protocol: Not TCP/UDP-based; encapsulated directly in Ethernet frames (EtherType 0x0806)",
+      "Purpose: Resolves IPv4 addresses to MAC addresses so devices can communicate on a local network.",
+      "Features: Uses broadcast requests and unicast replies, maintains an ARP cache, operates only within a local broadcast domain, and has no authentication (making it vulnerable to ARP spoofing)."
+    ]
+  },
+  {
+    "front": "NDP",
+    "back": [
+      "NDP (Neighbor Discovery Protocol)",
+      "OSI layer: Network layer (Layer 3)",
+      "Port / protocol: ICMPv6 (IP protocol number 58)",
+      "Purpose: Manages IPv6 neighbor discovery functions such as address resolution, router discovery, and reachability detection.",
+      "Features: Replaces ARP in IPv6, uses multicast instead of broadcast, supports stateless address autoconfiguration (SLAAC), and integrates security extensions like SEND."
+    ]
+  },
+  {
+    "front": "DAI",
+    "back": [
+      "DAI (Dynamic ARP Inspection)",
+      "Purpose: A Layer 2 security feature that prevents ARP spoofing and man-in-the-middle attacks by validating ARP packets on a network.",
+      "Features: Works with DHCP snooping binding tables, inspects and drops invalid ARP messages, trusted vs. untrusted ports, and commonly implemented on managed switches."
+    ]
+  },
+  {
+    "front": "IPsec",
+    "back": [
+      "IPsec (Internet Protocol Security)",
+      "OSI layer: Network layer (Layer 3)",
+      "Protocols included: ESP, AH, IKE",
+      "Purpose: Secures IP communications by providing authentication, integrity, and encryption, commonly used to implement VPNs.",
+      "Features: Supports transport and tunnel modes, uses security associations (SAs), operates transparently to applications, and can secure host-to-host, site-to-site, or remote-access traffic."
+    ]
+  },
+  {
+    "front": "AH",
+    "back": [
+      "AH (Authentication Header)",
+      "OSI layer: Network layer (Layer 3)",
+      "Port / protocol: IP protocol number 51",
+      "Purpose: Provides integrity, authentication, and anti-replay protection for IP packets without encrypting the payload.",
+      "Features: Part of IPsec, protects most IP header fields, incompatible with NAT, and less commonly used than ESP due to lack of confidentiality."
+    ]
+  },
+  {
+    "front": "ESP",
+    "back": [
+      "ESP (Encapsulating Security Payload)",
+      "OSI layer: Network layer (Layer 3)",
+      "Port / protocol: IP protocol number 50",
+      "Purpose: Provides confidentiality, integrity, authentication, and anti-replay protection for IP packets by encrypting the payload.",
+      "Features: Core component of IPsec, supports transport and tunnel modes, compatible with NAT when used with NAT-T, and widely used for VPN implementations."
+    ]
+  },
+  {
+    "front": "SMTP",
+    "back": [
+      "SMTP (Simple Mail Transfer Protocol)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: TCP 25 (standard), TCP 587 (submission), TCP 465 (SMTPS)",
+      "Purpose: Transfers and routes email messages between mail servers.",
+      "Features: Supports relaying, can use authentication for submission, works with MIME for attachments, and often paired with POP3 or IMAP for client retrieval."
+    ]
+  },
+  {
+    "front": "POP3",
+    "back": [
+      "POP3 (Post Office Protocol version 3)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: TCP 110 (standard), TCP 995 (POP3S over SSL/TLS)",
+      "Purpose: Retrieves email from a mail server to a local client, typically downloading and optionally deleting messages from the server.",
+      "Features: Simple, stateless protocol, works well for offline access, limited folder management, and largely replaced by IMAP for multi-device email access."
+    ]
+  },
+  {
+    "front": "IMAP",
+    "back": [
+      "IMAP (Internet Message Access Protocol)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: TCP 143 (standard), TCP 993 (IMAPS over SSL/TLS)",
+      "Purpose: Allows clients to access and manage email messages directly on the mail server, supporting multiple devices.",
+      "Features: Supports folders, message flags, partial fetches, concurrent access, and keeps emails synchronized across devices."
+    ]
+  },
+  {
+    "front": "HTTP",
+    "back": [
+      "HTTP (Hypertext Transfer Protocol)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: TCP 80 (standard), TCP 443 for HTTPS",
+      "Purpose: Transfers hypertext (web pages, media) between clients (browsers) and servers.",
+      "Features: Stateless protocol, supports request/response methods (GET, POST, etc.), extensible via headers, and HTTPS adds encryption via TLS/SSL."
+    ]
+  },
+  {
+    "front": "FTP",
+    "back": [
+      "FTP (File Transfer Protocol)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: TCP 21 (control), TCP 20 (data in active mode)",
+      "Purpose: Transfers files between a client and server over a network.",
+      "Features: Supports active and passive modes, separate control and data connections, plain-text authentication (not secure), and widely used for legacy file transfers."
+    ]
+  },
+  {
+    "front": "FTPS",
+    "back": [
+      "FTPS (File Transfer Protocol Secure)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: TCP 990 (implicit), TCP 21 (explicit control), plus dynamic ports for data transfer",
+      "Purpose: Adds SSL/TLS encryption to FTP for secure file transfers.",
+      "Features: Supports both implicit and explicit TLS/SSL, encrypts credentials and optionally data, compatible with standard FTP commands, and protects against eavesdropping and tampering."
+    ]
+  },
+  {
+    "front": "SFTP",
+    "back": [
+      "SFTP (SSH File Transfer Protocol)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: TCP 22",
+      "Purpose: Provides secure file transfer over a network using the SSH protocol.",
+      "Features: Encrypts both commands and data, supports authentication via passwords or keys, allows file management (list, delete, rename), and differs from FTPS by tunneling over SSH rather than adding TLS to FTP."
+    ]
+  },
+  {
+    "front": "SSH",
+    "back": [
+      "SSH (Secure Shell)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: TCP 22",
+      "Purpose: Provides secure, encrypted remote login and command execution over an insecure network, replacing legacy protocols like Telnet and rlogin.",
+      "Features:",
+      "Encryption & Security: Uses strong encryption (AES, ChaCha20) for confidentiality, and hashing (HMAC) for integrity.",
+      "Authentication Methods: Supports passwords, public/private key pairs, and optional multi-factor authentication.",
+      "Tunneling/Port Forwarding: Can securely forward arbitrary TCP connections (local, remote, and dynamic/SOCKS proxies).",
+      "File Transfers: Works with SFTP and SCP for secure file operations.",
+      "Agent Forwarding & Key Management: Allows centralized key management and forwarding of authentication agents.",
+      "Widely Supported: Built into most UNIX/Linux systems, available for Windows, and forms the backbone of secure remote administration.",
+      "Versatility: Can be used for command-line access, automated scripts, VPN-like tunnels, and securing legacy protocols."
+    ]
+  },
+  {
+    "front": "SSL",
+    "back": [
+      "SSL (Secure Sockets Layer)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: Works over many ports (e.g., TCP 443 for HTTPS, TCP 465 for SMTPS)",
+      "Purpose: Provides encryption and authentication for network communications.",
+      "Features: Predecessor to TLS, uses certificates for authentication, ensures data confidentiality and integrity, now considered deprecated in favor of TLS."
+    ]
+  },
+  {
+    "front": "TLS",
+    "back": [
+      "TLS (Transport Layer Security)",
+      "OSI layer: Application layer (Layer 7)",
+      "Port / protocol: Works over many ports (e.g., TCP 443 for HTTPS, TCP 993 for IMAPS)",
+      "Purpose: Secures network communications with encryption, authentication, and integrity.",
+      "Features: Successor to SSL, uses strong cipher suites, supports certificate-based authentication, ensures data confidentiality and integrity, and widely used in HTTPS, email, and VPNs."
+    ]
+  }
+]
