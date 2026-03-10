@@ -142,6 +142,31 @@ python main.py autogenerate my_set                 # Generate flashcards via Cla
 python main.py show                                # Start studying
 ```
 
+## PowerShell Aliases (Windows)
+
+To avoid typing `python main.py` every time, load the session aliases with:
+
+```powershell
+. .\activate_aliases.ps1
+```
+
+The `. ` (dot-space) is required — it runs the script in your current session so the aliases persist. After loading, you can use shorthand commands:
+
+| Alias | Command |
+|---|---|
+| `newset` | `python main.py newset` |
+| `select-set` | `python main.py select` |
+| `create` | `python main.py create` |
+| `show` | `python main.py show` |
+| `flip` | `python main.py flip` |
+| `scrape` | `python main.py scrape` |
+| `autogen <name> [--model x]` | `python main.py autogenerate ...` |
+| `delete-set` | `python main.py delete` |
+
+Aliases are temporary and only last for the current terminal session.
+
+---
+
 ## Card Sets
 
 Sets are stored as `.json` files in the `sets/` folder. Each card has a `front` (string) and a `back` (list of strings).
